@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C5F80730-F44F-4478-BDAE-6634EFC2CA88}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectName>MasterControllerV2_FDMOD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>
+    </PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>
+    </PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\Desktop\arduino-1.0.5-r2 (MasterController and Panels)\libraries\EEPROM;$(ProjectDir)..\..\..\Desktop\arduino-1.0.5-r2 (MasterController and Panels)\libraries\MemoryFree;$(ProjectDir)..\..\..\Desktop\arduino-1.0.5-r2 (MasterController and Panels)\libraries\SoftwareSerial;$(ProjectDir)..\..\..\Desktop\arduino-1.0.5-r2 (MasterController and Panels)\libraries\SPI;$(ProjectDir)..\..\..\Desktop\arduino-1.0.5-r2 (MasterController and Panels)\libraries\Wire;$(ProjectDir)..\..\..\Desktop\arduino-1.0.5-r2 (MasterController and Panels)\libraries\Wire\utility;$(ProjectDir)..\..\..\Desktop\arduino-1.0.5-r2 (MasterController and Panels)\libraries;$(ProjectDir)..\..\..\Desktop\arduino-1.0.5-r2 (MasterController and Panels)\hardware\arduino\libraries;$(ProjectDir)..\libraries;$(ProjectDir)..\..\..\Desktop\arduino-1.0.5-r2 (MasterController and Panels)\hardware\arduino\cores\arduino;$(ProjectDir)..\..\..\Desktop\arduino-1.0.5-r2 (MasterController and Panels)\hardware\arduino\cores\arduino\avr-libc;$(ProjectDir)..\..\..\Desktop\arduino-1.0.5-r2 (MasterController and Panels)\hardware\arduino\variants\standard;$(ProjectDir)..\MasterControllerV2_FDMOD;$(ProjectDir)..\..\..\desktop\arduino-1.0.5-r2 (mastercontroller and panels)\hardware\tools\avr\avr\include\;$(ProjectDir)..\..\..\desktop\arduino-1.0.5-r2 (mastercontroller and panels)\hardware\tools\avr\avr\include\avr\;$(ProjectDir)..\..\..\desktop\arduino-1.0.5-r2 (mastercontroller and panels)\hardware\tools\avr\avr\;$(ProjectDir)..\..\..\desktop\arduino-1.0.5-r2 (mastercontroller and panels)\hardware\tools\avr\lib\gcc\avr\4.3.2\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)__vm\.MasterControllerV2_FDMOD.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__AVR_ATmega328p__;__AVR_ATmega328P__;ARDUINO=105;ARDUINO_MAIN;__AVR__;__avr__;F_CPU=20000000L;__cplusplus=201103L;GCC_VERSION=40302;ARDUINO_ARCH_AVR;ARDUINO_AVR_ATMEGA328Q;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="VisualMicro" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MasterControllerV2_FDMOD.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="__vm\.MasterControllerV2_FDMOD.vsarduino.h" />
+  </ItemGroup>
+  <PropertyGroup>
+    <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.upload.maximum_size="30720" arduino.upload.speed="57600" visualmicro.package.name="arduino" arduino.board.property_bag="name=Arduino Duemilanove w/ ATmega328 @ 20MHz&#xD;&#xA;upload.protocol=arduino&#xD;&#xA;upload.maximum_size=30720&#xD;&#xA;upload.speed=57600&#xD;&#xA;bootloader.low_fuses=0xF7&#xD;&#xA;bootloader.high_fuses=0xD9&#xD;&#xA;bootloader.extended_fuses=0x05&#xD;&#xA;build.mcu=atmega328p&#xD;&#xA;build.f_cpu=20000000L&#xD;&#xA;build.core=arduino&#xD;&#xA;build.variant=standard&#xD;&#xA;runtime.ide.path=C:\Users\Stuart\Desktop\arduino-1.0.5-r2 (MasterController and Panels)&#xD;&#xA;runtime.os=windows&#xD;&#xA;build.system.path=C:\Users\Stuart\Desktop\arduino-1.0.5-r2 (MasterController and Panels)\hardware\arduino\system&#xD;&#xA;runtime.ide.version=105&#xD;&#xA;target_package=arduino&#xD;&#xA;target_platform=avr&#xD;&#xA;runtime.hardware.path=C:\Users\Stuart\Desktop\arduino-1.0.5-r2 (MasterController and Panels)\hardware&#xD;&#xA;originalid=atmega328q&#xD;&#xA;vm.platform.root.path=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\Extensions\02oghilb.30b\Micro Platforms\arduino10x&#xD;&#xA;avrisp.name=AVR ISP&#xD;&#xA;avrisp.communication=serial&#xD;&#xA;avrisp.protocol=stk500v1&#xD;&#xA;avrispmkii.name=AVRISP mkII&#xD;&#xA;avrispmkii.communication=serial&#xD;&#xA;avrispmkii.protocol=stk500v2&#xD;&#xA;usbtinyisp.name=USBtinyISP&#xD;&#xA;usbtinyisp.protocol=usbtiny&#xD;&#xA;usbasp.name=USBasp&#xD;&#xA;usbasp.communication=usb&#xD;&#xA;usbasp.protocol=usbasp&#xD;&#xA;parallel.name=Parallel Programmer&#xD;&#xA;parallel.protocol=dapa&#xD;&#xA;parallel.force=true&#xD;&#xA;arduinoisp.name=Arduino as ISP&#xD;&#xA;arduinoisp.communication=serial&#xD;&#xA;arduinoisp.protocol=stk500v1&#xD;&#xA;arduinoisp.speed=19200&#xD;&#xA;runtime.vm.boardinfo.id=atmega328q&#xD;&#xA;runtime.vm.boardinfo.name=atmega328q&#xD;&#xA;runtime.vm.boardinfo.desc=Arduino Duemilanove w/ ATmega328 @ 20MHz&#xD;&#xA;runtime.vm.boardinfo.src_location=C:\Users\Stuart\Desktop\arduino-1.0.5-r2 (MasterController and Panels)\hardware\arduino&#xD;&#xA;ide.hint=For use with Arduino 0023 and 1.0.x versions&#xD;&#xA;ide.location.key=Arduino&#xD;&#xA;ide.location.ide.winreg=Arduino 1.0.x Application&#xD;&#xA;ide.location.sketchbook.winreg=Arduino 1.0.x Sketchbook&#xD;&#xA;ide.location.sketchbook.preferences=sketchbook.path&#xD;&#xA;ide.location.sketchbook.default=%MYDOCUMENTS%\arduino&#xD;&#xA;ide.location.preferences=%VM_APPDATA_ROAMING%\arduino\preferences.txt&#xD;&#xA;ide.default.package=arduino&#xD;&#xA;ide.default.platform=avr&#xD;&#xA;ide.multiplatform=true&#xD;&#xA;ide.includes=arduino.h&#xD;&#xA;ide.platformswithoutpackage=true&#xD;&#xA;ide.includes.fallback=wprogram.h&#xD;&#xA;ide.extension=ino&#xD;&#xA;ide.extension.fallback=pde&#xD;&#xA;ide.versionLTEQ=149&#xD;&#xA;ide.exe=arduino.exe&#xD;&#xA;ide.hosts=atmel&#xD;&#xA;ide.url=http://arduino.cc/en/Main/Software&#xD;&#xA;vm.debug=true&#xD;&#xA;software=ARDUINO&#xD;&#xA;ide.appid=arduino10x&#xD;&#xA;location.sketchbook=C:\Users\Stuart\Documents\Arduino&#xD;&#xA;build.core.path=C:\Users\Stuart\Desktop\arduino-1.0.5-r2 (MasterController and Panels)\hardware\arduino\cores\arduino&#xD;&#xA;vm.core.include=arduino.h&#xD;&#xA;build.board=AVR_ATMEGA328Q&#xD;&#xA;vm.boardsource.path=C:\Users\Stuart\Desktop\arduino-1.0.5-r2 (MasterController and Panels)\hardware\arduino&#xD;&#xA;runtime.platform.path=C:\Users\Stuart\Desktop\arduino-1.0.5-r2 (MasterController and Panels)\hardware\arduino&#xD;&#xA;vm.platformname.name=avr&#xD;&#xA;build.arch=AVR&#xD;&#xA;" vm.upload.useprogrammer="1" visualmicro.application.name="arduino10x" arduino.build.mcu="atmega328p" arduino.upload.protocol="arduino" arduino.build.f_cpu="20000000L" arduino.board.desc="Arduino Duemilanove w/ ATmega328 @ 20MHz" arduino.board.name="atmega328q" arduino.upload.port="COM3" visualmicro.platform.name="avr" arduino.build.core="arduino" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
